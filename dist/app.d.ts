@@ -1,8 +1,4 @@
-/**
- * @git-fabric/tailscale — FabricApp factory
- * 19 tools: devices, DNS, ACL, auth keys, health
- */
-import { type TailscaleAdapter } from './adapters/env.js';
+import type { TailscaleAdapter } from './types.js';
 interface FabricTool {
     name: string;
     description: string;
