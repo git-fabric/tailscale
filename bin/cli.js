@@ -53,12 +53,12 @@ async function registerWithGateway() {
     tailscale_node: 'fabric-tailscale',
     worker_pool: { total: 0, healthy: 0, workers: [] },
     routes: [
-      { prefix: 'fabric.tailscale', local_pref: 100, description: 'Tailscale VPN — devices, DNS, ACL, auth keys, routes' },
-      { prefix: 'fabric.tailscale.devices', local_pref: 100, description: 'Device management — list, authorize, tag, remove devices' },
-      { prefix: 'fabric.tailscale.dns', local_pref: 100, description: 'DNS settings — MagicDNS, nameservers, split DNS, search paths' },
-      { prefix: 'fabric.tailscale.acl', local_pref: 100, description: 'Access control — ACL policy, validation, groups, tags' },
-      { prefix: 'fabric.tailscale.keys', local_pref: 100, description: 'Auth keys — create, list, delete authentication keys' },
-      { prefix: 'fabric.tailscale.routes', local_pref: 100, description: 'Routes — subnet routers, exit nodes, route advertisement' },
+      { prefix: 'fabric.tailscale', local_pref: 100, confidence_floor: 0.7, description: 'Tailscale VPN — devices, DNS, ACL, auth keys, routes' },
+      { prefix: 'fabric.tailscale.devices', local_pref: 100, confidence_floor: 0.7, description: 'Device management — list, authorize, tag, remove devices' },
+      { prefix: 'fabric.tailscale.dns', local_pref: 100, confidence_floor: 0.7, description: 'DNS settings — MagicDNS, nameservers, split DNS, search paths' },
+      { prefix: 'fabric.tailscale.acl', local_pref: 100, confidence_floor: 0.7, description: 'Access control — ACL policy, validation, groups, tags' },
+      { prefix: 'fabric.tailscale.keys', local_pref: 100, confidence_floor: 0.7, description: 'Auth keys — create, list, delete authentication keys' },
+      { prefix: 'fabric.tailscale.routes', local_pref: 100, confidence_floor: 0.7, description: 'Routes — subnet routers, exit nodes, route advertisement' },
     ],
   };
 
