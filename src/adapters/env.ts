@@ -6,13 +6,8 @@
 
 const TS_API = 'https://api.tailscale.com/api/v2';
 
-export interface TailscaleAdapter {
-  tailnet: string;
-  get(path: string): Promise<unknown>;
-  post(path: string, body?: unknown): Promise<unknown>;
-  patch(path: string, body?: unknown): Promise<unknown>;
-  delete(path: string): Promise<void>;
-}
+import type { TailscaleAdapter } from '../types.js';
+export type { TailscaleAdapter } from '../types.js';
 
 export function createAdapterFromEnv(): TailscaleAdapter {
   const key = process.env.TAILSCALE_API_KEY;
