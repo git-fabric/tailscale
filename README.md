@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="tailscale: Devices, DNS, ACLs and auth keys via MCP" width="100%"></p>
+
 # @git-fabric/tailscale
 
 Tailscale fabric app -- devices, DNS, ACL, auth keys, and route management as a composable MCP layer. Part of [git-fabric](https://github.com/git-fabric).
@@ -114,3 +116,8 @@ The fabric registers as AS65007 with the gateway and begins advertising `fabric.
 ## License
 
 MIT
+
+<!-- org-footer -->
+---
+
+<p align="center"><sub>Part of <a href="https://github.com/git-fabric">git-fabric</a> · composable fabric apps for Git-native infrastructure · built by <a href="https://github.com/ry-ops">ry-ops</a></sub></p>
